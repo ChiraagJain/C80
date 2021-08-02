@@ -21,7 +21,7 @@ function submit() {
     document.getElementById("sort_button").style.display = "inline-block";
 }
  function sorting() {
-     name_of_the_student_arrya.sort
+     name_of_the_student_arrya.sort();
      console.log(name_of_the_student_arrya);
      var display_sorting = [];
      var length_2 = name_of_the_student_arrya.length;
@@ -30,7 +30,8 @@ function submit() {
          display_sorting.push("<h4>name-" + name_of_the_student_arrya[j] + "</h4>");
          console.log(display_sorting);
      }
-     //document.getElementById("display_name_with_commas").innerHTML = display_student;
+    document.getElementById("display_name_with_commas").innerHTML = display_sorting;         
      var remove_commas = display_sorting.join(" ");
      console.log(remove_commas);
      document.getElementById("display_name_without_commas").innerHTML = remove_commas ;
+    }
